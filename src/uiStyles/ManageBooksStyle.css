@@ -1,0 +1,97 @@
+.btnAddNewBook{
+    -fx-background-color: linear-gradient(to bottom right,#263238,#5C6BC0);
+    -fx-text-fill: white;
+}
+
+.btnRemoveBook{
+    -fx-background-color: linear-gradient(to bottom right,#263238,#5C6BC0);
+    -fx-text-fill: white;
+}
+
+.btnCheckBookDemands{
+    -fx-background-color: linear-gradient(to bottom right,#263238,#5C6BC0);
+    -fx-text-fill: white;
+}
+
+.returnBook {
+    -fx-background-color: linear-gradient(to bottom right,#263238,#5C6BC0);
+    -fx-text-fill: white;
+}
+
+.bookReturnRecords{
+    -fx-background-color: linear-gradient(to bottom right,#263238,#5C6BC0);
+    -fx-text-fill: white;
+}
+
+.borrowersRecords{
+    -fx-background-color: linear-gradient(to bottom right,#263238,#5C6BC0);
+    -fx-text-fill: white;
+}
+
+
+/**************** HOVER *************************/
+.btnAddNewBook:hover{
+    -fx-background-color: linear-gradient(to bottom right,#43B8D3,#A5D6A7);
+    -fx-text-fill: black;
+}
+
+.btnRemoveBook:hover{
+    -fx-background-color: linear-gradient(to bottom right,#4CAF50,#5C6BC0);
+    -fx-text-fill: black;
+}
+
+.btnCheckBookDemands:hover{
+    -fx-background-color: linear-gradient(to bottom right,#FFAB91,#BCAAA4);
+    -fx-text-fill: black;
+}
+
+.bookReturnRecords:hover{
+    -fx-background-color: linear-gradient(to bottom right,#BCAAA4,#A336A7);
+    -fx-text-fill: black;
+}
+
+.returnBook:hover{
+    -fx-background-color: linear-gradient(to bottom right,#827717,#FFCCBC);
+    -fx-text-fill: black;
+}
+
+.borrowersRecords:hover{
+    -fx-background-color: linear-gradient(to bottom right,#A1887F,#D7CCC8);
+    -fx-text-fill: black;
+}
+
+
+/**************** Focused *************************/
+.btnAddNewBook:focused{
+    -fx-background-color: linear-gradient(to bottom right,#43B8D3,#A5D6A7);
+
+}
+
+.btnRemoveBook:focused{
+    -fx-background-color: linear-gradient(to bottom right,#4CAF50,#5C6BC0);
+
+}
+.btnCheckBookDemands:focused{
+    -fx-background-color: linear-gradient(to bottom right,#FFAB91,#BCAAA4);
+
+}
+
+.returnBook:focused{
+    -fx-background-color: linear-gradient(to bottom right,#827717,#FFCCBC);
+
+}
+
+.bookReturnRecords:focused{
+    -fx-background-color: linear-gradient(to bottom right,#BCAAA4,#A336A7);
+}
+
+.borrowersRecords:focused{
+    -fx-background-color: linear-gradient(to bottom right,#A1887F,#D7CCC8);
+
+}
+/*
+.root{
+    -fx-background-color: linear-gradient(to left top,#263238,#5C6BC0);
+}
+
+ */

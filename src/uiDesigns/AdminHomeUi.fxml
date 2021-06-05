@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" styleClass="mainPain" stylesheets="@../uiStyles/AdminHomeStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uiControllers.AdminHomeController">
+   <left>
+      <VBox prefHeight="700.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="294.0" text="Welcom" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="294.0" text="ADMIN HOME PAGE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="80.0" fitWidth="100.0" pickOnBounds="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="58.0" right="50.0" top="10.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../img/booksIcon2.png" />
+               </image></ImageView>
+            <Label alignment="CENTER" prefHeight="22.0" prefWidth="200.0" text="Options" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <Button fx:id="btnManageBooks" mnemonicParsing="false" onAction="#manageBooks" prefHeight="50.0" prefWidth="296.0" stylesheets="@../uiStyles/AdminHomeStyle.css" text="Manage Books">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnManageStudents" mnemonicParsing="false" onAction="#manageStudents" prefHeight="50.0" prefWidth="304.0" stylesheets="@../uiStyles/AdminHomeStyle.css" text="Manage Students">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnManageBranchs" mnemonicParsing="false" onAction="#manageBranchs" prefHeight="50.0" prefWidth="310.0" stylesheets="@../uiStyles/AdminHomeStyle.css" text="Manage Branchs">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnAccountSettings" mnemonicParsing="false" onAction="#accountSettings" prefHeight="50.0" prefWidth="326.0" stylesheets="@../uiStyles/AdminHomeStyle.css" text="Account Settings">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../img/booksIcon1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </left>
+   <bottom>
+      <HBox prefHeight="40.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="30.0" prefWidth="76.0" text="Status :" textFill="WHITE">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="statusLabel" prefHeight="30.0" prefWidth="1156.0" text="/" textFill="WHITE">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnLogout" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#logout" prefHeight="30.0" prefWidth="135.0" styleClass="btnLogout" stylesheets="@../uiStyles/AdminHomeStyle.css" text="Logout">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <right>
+      <VBox prefHeight="760.0" prefWidth="320.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="50.0" prefWidth="264.0" text="Stock Of all Available Books" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="50.0" prefWidth="300.0">
+               <children>
+                  <TextField fx:id="textSearchBook" prefHeight="30.0" prefWidth="250.0" promptText="Search Book Title">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#searchBook" prefWidth="58.0" stylesheets="@../uiStyles/AdminHomeStyle.css" text="Search">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="5.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <ScrollPane prefHeight="658.0" prefWidth="560.0">
+               <content>
+                  <TableView fx:id="tableBookStock" prefHeight="663.0" prefWidth="473.0">
+                    <columns>
+                       <TableColumn fx:id="bookId" prefWidth="75.0" text="Book ID" />
+                       <TableColumn fx:id="bookTitle" prefWidth="75.0" text="Title" />
+                       <TableColumn fx:id="bookAuthor" prefWidth="75.0" text="Author" />
+                       <TableColumn fx:id="bookPublisher" prefWidth="75.0" text="Publisher" />
+                       <TableColumn fx:id="bookBranch" prefWidth="75.0" text="Branch" />
+                    </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

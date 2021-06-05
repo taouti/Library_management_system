@@ -1,0 +1,16 @@
+/*
+.jfx-button {
+    -fx-background-color:linear-gradient(to bottom right,#263238,#607D8B);
+    -fx-text-fill: white;
+}
+
+.jfx-button:hover{
+    -fx-background-color: linear-gradient(to bottom right,#FFAB91,#4CAF50);
+    -fx-text-fill: black;
+}
+
+ */
+
+.root{
+    -fx-background-color: linear-gradient(to bottom right,#43B8D3,#A5D6A7);
+}

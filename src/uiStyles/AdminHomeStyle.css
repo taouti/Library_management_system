@@ -1,0 +1,23 @@
+.btnLogout {
+    -fx-background-color:linear-gradient(to bottom right,#263238,#607D8B);
+    -fx-text-fill: white;
+}
+
+.button{
+    -fx-background-color:linear-gradient(to bottom right,#263238,#607D8B);
+    -fx-text-fill: white;
+}
+
+.button:hover{
+    -fx-background-color:#BCAAA4;
+    -fx-text-fill: black;
+}
+
+.btnLogout:hover{
+    -fx-background-color:#F06292;
+    -fx-text-fill: black;
+}
+
+.mainPain{
+    -fx-background-color: linear-gradient(to bottom left,#263238,#5C6BC0);
+}
