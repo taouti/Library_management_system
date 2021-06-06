@@ -29,33 +29,33 @@ public class ManageBooksController implements Initializable {
 
     @FXML
     public void loadAddBookUi(ActionEvent event) throws IOException {
-        if (flag){
+        if (flag) {
             flag = false;
-            flag1= true;
+            flag1 = true;
             Pane view = FXMLLoader.load(getClass().getResource("/uiDesigns/AddNewBookUi.fxml"));
             mainPane.setCenter(view);
-        }else{
+        } else {
             flag = true;
             mainPane.setCenter(current);
         }
     }
+
     @FXML
     public void loadRemoveBookUi(ActionEvent event) throws IOException {
-        if (flag1){
+        if (flag1) {
             flag1 = false;
             flag = true;
             Pane view = FXMLLoader.load(getClass().getResource("/uiDesigns/RemoveBookUi.fxml"));
             mainPane.setCenter(view);
-        }else{
+        } else {
             flag1 = true;
             mainPane.setCenter(current);
         }
     }
 
 
-
     @Override
-    public void initialize(URL url, ResourceBundle rb){
+    public void initialize(URL url, ResourceBundle rb) {
         current = (Pane) mainPane.getCenter();
     }
 

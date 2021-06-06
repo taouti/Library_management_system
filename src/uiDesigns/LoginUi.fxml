@@ -1,153 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXPasswordField?>
-<?import com.jfoenix.controls.JFXRadioButton?>
-<?import com.jfoenix.controls.JFXTextField?>
-<?import com.jfoenix.controls.JFXTogglePane?>
-<?import javafx.geometry.Insets?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.effect.Blend?>
-<?import javafx.scene.effect.BoxBlur?>
-<?import javafx.scene.effect.ColorAdjust?>
-<?import javafx.scene.effect.DropShadow?>
-<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
-
-<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="700.0" styleClass="root" stylesheets="@../uiStyles/LoginStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uiControllers.LoginController">
-   <children>
-      <AnchorPane fx:id="root2" layoutX="366.0" layoutY="38.0" styleClass="paneOne" stylesheets="@../uiStyles/LoginStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <VBox layoutY="73.0" prefHeight="228.0" prefWidth="300.0" stylesheets="@../uiStyles/LoginStyle.css" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="73.0">
-               <children>
-                  <JFXTextField fx:id="textUserName" focusColor="WHITE" labelFloat="true" promptText="Username" unFocusColor="WHITE">
-                     <VBox.margin>
-                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-                     </VBox.margin>
-                     <font>
-                        <Font name="Times New Roman" size="14.0" />
-                     </font>
-                  </JFXTextField>
-                  <JFXPasswordField fx:id="textPassword" focusColor="WHITE" labelFloat="true" promptText="Password" unFocusColor="BLACK">
-                     <VBox.margin>
-                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-                     </VBox.margin>
-                     <font>
-                        <Font name="Times New Roman" size="14.0" />
-                     </font>
-                  </JFXPasswordField>
-                  <JFXTogglePane prefHeight="105.0" prefWidth="260.0">
-                     <VBox.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                     </VBox.margin>
-                     <children>
-                        <VBox prefHeight="63.0" prefWidth="280.0">
-                           <children>
-                              <JFXRadioButton fx:id="radioBtnAdmin" blendMode="COLOR_BURN" text="Admin" textAlignment="CENTER">
-                                 <VBox.margin>
-                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                 </VBox.margin>
-                                 <effect>
-                                    <ColorAdjust brightness="1.0" />
-                                 </effect>
-                              </JFXRadioButton>
-                              <JFXRadioButton fx:id="radioBtnStudent" blendMode="COLOR_BURN" text="Student" textAlignment="CENTER">
-                                 <VBox.margin>
-                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                 </VBox.margin>
-                                 <effect>
-                                    <ColorAdjust brightness="1.0" />
-                                 </effect>
-                              </JFXRadioButton>
-                           </children>
-                           <effect>
-                              <ColorAdjust brightness="-0.48" />
-                           </effect>
-                        </VBox>
-                     </children>
-                  </JFXTogglePane>
-               </children>
-               <effect>
-                  <Glow level="0.17">
-                     <input>
-                        <ColorAdjust brightness="1.0" contrast="0.21" />
-                     </input>
-                  </Glow>
-               </effect>
-            </VBox>
-            <Label fx:id="signin" alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" opacity="0.59" stylesheets="@../uiStyles/LoginStyle.css" text="Sign in" textFill="WHITE" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="10.0">
-               <font>
-                  <Font name="Agency FB Bold" size="34.0" />
-               </font>
-               <effect>
-                  <Glow level="0.33">
-                     <input>
-                        <ColorAdjust brightness="1.0" />
-                     </input>
-                  </Glow>
-               </effect>
-            </Label>
-         </children>
-         <effect>
-            <Blend />
-         </effect>
-      </AnchorPane>
-      <ImageView fitHeight="400.0" fitWidth="401.0" opacity="0.24" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="299.0" AnchorPane.topAnchor="0.0">
-         <effect>
-            <BoxBlur />
-         </effect>
-         <image>
-            <Image url="@../img/books.jpg" />
-         </image>
-      </ImageView>
-      <HBox stylesheets="@../uiStyles/LoginStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="330.0">
-         <children>
-            <JFXButton fx:id="btnLogin" mnemonicParsing="false" onAction="#login" prefHeight="60.0" prefWidth="150.0" styleClass="btnLogin" stylesheets="@../uiStyles/LoginStyle.css" text="LOGIN">
-               <HBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </HBox.margin>
-               <font>
-                  <Font name="Berlin Sans FB Demi Bold" size="17.0" />
-               </font>
-               <effect>
-                  <DropShadow color="#457f9a" height="15.07" radius="4.8100000000000005" spread="0.51" width="6.17" />
-               </effect>
-            </JFXButton>
-            <JFXButton fx:id="btnClose" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#close" prefHeight="60.0" prefWidth="150.0" styleClass="btnClose" stylesheets="@../uiStyles/LoginStyle.css" text="CLOSE">
-               <HBox.margin>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </HBox.margin>
-               <font>
-                  <Font name="Berlin Sans FB Demi Bold" size="17.0" />
-               </font>
-               <effect>
-                  <DropShadow color="#457f9a" height="15.07" radius="4.8100000000000005" spread="0.51" width="6.17" />
-               </effect>
-            </JFXButton>
-         </children>
-      </HBox>
-      <JFXButton fx:id="signUp" layoutX="88.0" layoutY="69.0" onAction="#demandAccount" prefHeight="48.0" prefWidth="226.0" styleClass="signUp" stylesheets="@../uiStyles/LoginStyle.css" text="SignUp">
-         <font>
-            <Font name="Agency FB Bold" size="30.0" />
-         </font>
-      </JFXButton>
-      <Label layoutX="25.0" layoutY="136.0" prefHeight="42.0" prefWidth="353.0" text="Library Management System By TAOUTI M.MADANI" textFill="WHITE">
-         <font>
-            <Font name="System Bold Italic" size="14.0" />
-         </font>
-      </Label>
-      <Label fx:id="lblDate" layoutX="25.0" layoutY="344.0" prefHeight="42.0" prefWidth="353.0" textFill="WHITE">
-         <font>
-            <Font name="System Bold Italic" size="14.0" />
-         </font>
-      </Label>
-   </children>
-   <effect>
-      <ColorAdjust brightness="-0.12" contrast="0.34" hue="0.24" saturation="-0.12" />
-   </effect>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="root" prefHeight="400.0" prefWidth="700.0"
+            styleClass="root" stylesheets="@../uiStyles/LoginStyle.css"
+            xmlns="http://javafx.com/javafx/11.0.1" fx:controller="uiControllers.LoginController">
+    <children>
+        <AnchorPane fx:id="root2" layoutX="366.0" layoutY="38.0" styleClass="paneOne"
+                    stylesheets="@../uiStyles/LoginStyle.css" AnchorPane.bottomAnchor="0.0"
+                    AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <VBox layoutY="73.0" prefHeight="228.0" prefWidth="300.0" stylesheets="@../uiStyles/LoginStyle.css"
+                      AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                      AnchorPane.topAnchor="73.0">
+                    <children>
+                        <JFXTextField fx:id="textUserName" focusColor="WHITE" labelFloat="true" promptText="Username"
+                                      unFocusColor="WHITE">
+                            <VBox.margin>
+                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                            </VBox.margin>
+                            <font>
+                                <Font name="Times New Roman" size="14.0"/>
+                            </font>
+                        </JFXTextField>
+                        <JFXPasswordField fx:id="textPassword" focusColor="WHITE" labelFloat="true"
+                                          promptText="Password" unFocusColor="BLACK">
+                            <VBox.margin>
+                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                            </VBox.margin>
+                            <font>
+                                <Font name="Times New Roman" size="14.0"/>
+                            </font>
+                        </JFXPasswordField>
+                        <JFXTogglePane prefHeight="105.0" prefWidth="260.0">
+                            <VBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                            </VBox.margin>
+                            <children>
+                                <VBox prefHeight="63.0" prefWidth="280.0">
+                                    <children>
+                                        <JFXRadioButton fx:id="radioBtnAdmin" blendMode="COLOR_BURN" text="Admin"
+                                                        textAlignment="CENTER">
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                                            </VBox.margin>
+                                            <effect>
+                                                <ColorAdjust brightness="1.0"/>
+                                            </effect>
+                                        </JFXRadioButton>
+                                        <JFXRadioButton fx:id="radioBtnStudent" blendMode="COLOR_BURN" text="Student"
+                                                        textAlignment="CENTER">
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                                            </VBox.margin>
+                                            <effect>
+                                                <ColorAdjust brightness="1.0"/>
+                                            </effect>
+                                        </JFXRadioButton>
+                                    </children>
+                                    <effect>
+                                        <ColorAdjust brightness="-0.48"/>
+                                    </effect>
+                                </VBox>
+                            </children>
+                        </JFXTogglePane>
+                    </children>
+                    <effect>
+                        <Glow level="0.17">
+                            <input>
+                                <ColorAdjust brightness="1.0" contrast="0.21"/>
+                            </input>
+                        </Glow>
+                    </effect>
+                </VBox>
+                <Label fx:id="signin" alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" opacity="0.59"
+                       stylesheets="@../uiStyles/LoginStyle.css" text="Sign in" textFill="WHITE"
+                       AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="10.0">
+                    <font>
+                        <Font name="Agency FB Bold" size="34.0"/>
+                    </font>
+                    <effect>
+                        <Glow level="0.33">
+                            <input>
+                                <ColorAdjust brightness="1.0"/>
+                            </input>
+                        </Glow>
+                    </effect>
+                </Label>
+            </children>
+            <effect>
+                <Blend/>
+            </effect>
+        </AnchorPane>
+        <ImageView fitHeight="400.0" fitWidth="401.0" opacity="0.24" pickOnBounds="true" AnchorPane.bottomAnchor="0.0"
+                   AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="299.0" AnchorPane.topAnchor="0.0">
+            <effect>
+                <BoxBlur/>
+            </effect>
+            <image>
+                <Image url="@../img/books.jpg"/>
+            </image>
+        </ImageView>
+        <HBox stylesheets="@../uiStyles/LoginStyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="400.0"
+              AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="330.0">
+            <children>
+                <JFXButton fx:id="btnLogin" mnemonicParsing="false" onAction="#login" prefHeight="60.0"
+                           prefWidth="150.0" styleClass="btnLogin" stylesheets="@../uiStyles/LoginStyle.css"
+                           text="LOGIN">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </HBox.margin>
+                    <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="17.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow color="#457f9a" height="15.07" radius="4.8100000000000005" spread="0.51"
+                                    width="6.17"/>
+                    </effect>
+                </JFXButton>
+                <JFXButton fx:id="btnClose" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#close"
+                           prefHeight="60.0" prefWidth="150.0" styleClass="btnClose"
+                           stylesheets="@../uiStyles/LoginStyle.css" text="CLOSE">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </HBox.margin>
+                    <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="17.0"/>
+                    </font>
+                    <effect>
+                        <DropShadow color="#457f9a" height="15.07" radius="4.8100000000000005" spread="0.51"
+                                    width="6.17"/>
+                    </effect>
+                </JFXButton>
+            </children>
+        </HBox>
+        <JFXButton fx:id="signUp" layoutX="88.0" layoutY="69.0" onAction="#demandAccount" prefHeight="48.0"
+                   prefWidth="226.0" styleClass="signUp" stylesheets="@../uiStyles/LoginStyle.css" text="SignUp">
+            <font>
+                <Font name="Agency FB Bold" size="30.0"/>
+            </font>
+        </JFXButton>
+        <Label layoutX="25.0" layoutY="136.0" prefHeight="42.0" prefWidth="353.0"
+               text="Library Management System By TAOUTI M.MADANI" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="14.0"/>
+            </font>
+        </Label>
+        <Label fx:id="lblDate" layoutX="25.0" layoutY="344.0" prefHeight="42.0" prefWidth="353.0" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="14.0"/>
+            </font>
+        </Label>
+    </children>
+    <effect>
+        <ColorAdjust brightness="-0.12" contrast="0.34" hue="0.24" saturation="-0.12"/>
+    </effect>
 </AnchorPane>

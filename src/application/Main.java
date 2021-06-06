@@ -1,6 +1,5 @@
 package application;
 
-import database.DatabaseHandler;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
@@ -12,7 +11,6 @@ import javafx.stage.StageStyle;
 
 import java.io.File;
 import java.io.IOException;
-import java.sql.SQLException;
 
 
 public class Main extends Application {
@@ -21,17 +19,8 @@ public class Main extends Application {
     public static double xOffset;
     public static double yOffset;
 
-    @Override
-    public void start(Stage stage) throws IOException {
-        stage.initStyle(StageStyle.UNDECORATED);
-        stage.centerOnScreen();
-        Main.setRoot(stage,"LoginUi","LoginStyle");
-    	//scene.getStylesheets().add(Main.class.getResource("/uiDesigns/LoginStyle.css").toExternalForm());
-
-    }
-
     public static void setRoot(Stage current, String fxml, String css) throws IOException {
-        Parent root = FXMLLoader.load(Main.class.getResource("/uiDesigns/"+ fxml + ".fxml"));
+        Parent root = FXMLLoader.load(Main.class.getResource("/uiDesigns/" + fxml + ".fxml"));
         root.setOnMousePressed(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent mouseEvent) {
@@ -47,15 +36,15 @@ public class Main extends Application {
             }
         });
         Scene scene = new Scene(root);
-        //scene.getStylesheets().add(Main.class.getResource("/uiStyles/"+ css + ".css").toExternalForm());
+        scene.getStylesheets().add(Main.class.getResource("/uiStyles/" + css + ".css").toExternalForm());
         current.setScene(scene);
         current.centerOnScreen();
         current.show();
     }
-    
+
     public static void main(String[] args) throws IOException {
         File data = new File("data.db");
-        if (!data.exists()){
+        if (!data.exists()) {
             data.createNewFile();
             System.out.println("file does not exist!,\n new file data.db has been created");
         } else {
@@ -64,6 +53,15 @@ public class Main extends Application {
             System.out.println("File already exists!,\n deleting file...\nnew file data.db created");
         }
         launch();
+    }
+
+    @Override
+    public void start(Stage stage) throws IOException {
+        stage.initStyle(StageStyle.UNDECORATED);
+        stage.centerOnScreen();
+        Main.setRoot(stage, "LoginUi", "LoginStyle");
+        //scene.getStylesheets().add(Main.class.getResource("/uiDesigns/LoginStyle.css").toExternalForm());
+
     }
 }
 

@@ -1,45 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
-
-<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="838.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uiControllers.ManageBooksController">
-   <top>
-      <HBox prefHeight="100.0" prefWidth="858.0" BorderPane.alignment="CENTER">
-         <children>
-            <Button fx:id="btnAddNewBook" mnemonicParsing="false" onAction="#loadAddBookUi" prefHeight="100.0" prefWidth="140.0" styleClass="btnAddNewBook" stylesheets="@../uiStyles/ManageBooksStyle.css" text="Add New Book">
-               <HBox.margin>
-                  <Insets />
-               </HBox.margin>
-            </Button>
-            <Button fx:id="btnRemoveBook" mnemonicParsing="false" onAction="#loadRemoveBookUi" prefHeight="100.0" prefWidth="140.0" styleClass="btnRemoveBook" stylesheets="@../uiStyles/ManageBooksStyle.css" text="Rmove Book">
-               <HBox.margin>
-                  <Insets />
-               </HBox.margin>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="140.0" styleClass="btnCheckBookDemands" stylesheets="@../uiStyles/ManageBooksStyle.css" text="Check Book Demands">
-               <HBox.margin>
-                  <Insets />
-               </HBox.margin>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="140.0" styleClass="returnBook" stylesheets="@../uiStyles/ManageBooksStyle.css" text="Return Book to Stock">
-               <HBox.margin>
-                  <Insets />
-               </HBox.margin>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="140.0" styleClass="bookReturnRecords" stylesheets="@../uiStyles/ManageBooksStyle.css" text="Book Return Records">
-               <HBox.margin>
-                  <Insets />
-               </HBox.margin>
-            </Button>
-            <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="140.0" styleClass="borrowersRecords" stylesheets="@../uiStyles/ManageBooksStyle.css" text="Borrowers Records">
-               <HBox.margin>
-                  <Insets />
-               </HBox.margin>
-            </Button>
-         </children>
-      </HBox>
-   </top>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="730.0" prefWidth="838.0"
+            xmlns="http://javafx.com/javafx/11.0.1" fx:controller="uiControllers.ManageBooksController">
+    <top>
+        <HBox prefHeight="100.0" prefWidth="858.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="btnAddNewBook" mnemonicParsing="false" onAction="#loadAddBookUi" prefHeight="100.0"
+                        prefWidth="140.0" styleClass="btnAddNewBook" stylesheets="@../uiStyles/ManageBooksStyle.css"
+                        text="Add New Book">
+                    <HBox.margin>
+                        <Insets/>
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="btnRemoveBook" mnemonicParsing="false" onAction="#loadRemoveBookUi" prefHeight="100.0"
+                        prefWidth="140.0" styleClass="btnRemoveBook" stylesheets="@../uiStyles/ManageBooksStyle.css"
+                        text="Rmove Book">
+                    <HBox.margin>
+                        <Insets/>
+                    </HBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="140.0" styleClass="btnCheckBookDemands"
+                        stylesheets="@../uiStyles/ManageBooksStyle.css" text="Check Book Demands">
+                    <HBox.margin>
+                        <Insets/>
+                    </HBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="140.0" styleClass="returnBook"
+                        stylesheets="@../uiStyles/ManageBooksStyle.css" text="Return Book to Stock">
+                    <HBox.margin>
+                        <Insets/>
+                    </HBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="140.0" styleClass="bookReturnRecords"
+                        stylesheets="@../uiStyles/ManageBooksStyle.css" text="Book Return Records">
+                    <HBox.margin>
+                        <Insets/>
+                    </HBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="140.0" styleClass="borrowersRecords"
+                        stylesheets="@../uiStyles/ManageBooksStyle.css" text="Borrowers Records">
+                    <HBox.margin>
+                        <Insets/>
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+    </top>
 </BorderPane>

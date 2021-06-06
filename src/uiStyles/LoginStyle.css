@@ -1,37 +1,38 @@
 .button {
-	-fx-background-color:#37474F;
-	-fx-text-fill: white;
+    -fx-background-color: #37474F;
+    -fx-text-fill: white;
 }
 
-.signUp{
-	-fx-text-fill: white ;
-	-fx-background-color:linear-gradient(to bottom right,#263238,#607D8B);
-	/*-fx-background-color: #607D8B ;*/
-}
-.signUp:hover{
-	-fx-background-color:#A336A7;
-	-fx-text-fill: black;
+.signUp {
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(to bottom right, #263238, #607D8B);
+    /*-fx-background-color: #607D8B ;*/
 }
 
-.btnLogin:hover{
-	-fx-background-color:#A5D6A7;
-	-fx-text-fill: black;
+.signUp:hover {
+    -fx-background-color: #A336A7;
+    -fx-text-fill: black;
 }
 
-.btnClose:hover{
-	-fx-background-color:#FFAB91;
-	-fx-text-fill: black;
+.btnLogin:hover {
+    -fx-background-color: #A5D6A7;
+    -fx-text-fill: black;
+}
+
+.btnClose:hover {
+    -fx-background-color: #FFAB91;
+    -fx-text-fill: black;
 }
 
 .root {
-	/*-fx-background-color:#B0BEC5;*/
-	-fx-background-color:linear-gradient(to bottom right,#263238,#607D8B);
+    /*-fx-background-color:#B0BEC5;*/
+    -fx-background-color: linear-gradient(to bottom right, #263238, #607D8B);
 }
 
-.paneOne{
-	-fx-background-color:linear-gradient(to bottom right,#263238,#607D8B);
+.paneOne {
+    -fx-background-color: linear-gradient(to bottom right, #263238, #607D8B);
 }
 
 .test {
-	-fx-text-fill: #000000;
+    -fx-text-fill: #000000;
 }

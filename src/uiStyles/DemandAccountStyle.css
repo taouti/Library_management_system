@@ -1,27 +1,27 @@
 .button {
-    -fx-background-color:#3949AB;
+    -fx-background-color: #3949AB;
     -fx-text-fill: white;
 }
 
-.button:hover{
-    -fx-background-color:#9CCC65;
+.button:hover {
+    -fx-background-color: #9CCC65;
 }
 
 .AnchorPane1 {
     /*-fx-background-color:#B0BEC5;*/
-    -fx-background-color:linear-gradient(to bottom right,#43B8D3,#000000);
+    -fx-background-color: linear-gradient(to bottom right, #43B8D3, #000000);
 }
 
-.AnchorPane2{
-    -fx-background-color:linear-gradient(to bottom right,#7986CB,#1A237E);
+.AnchorPane2 {
+    -fx-background-color: linear-gradient(to bottom right, #7986CB, #1A237E);
 }
 
-.textUserName{
+.textUserName {
     -fx-text-fill: white;
 
 }
 
-.newPassword{
+.newPassword {
     -fx-text-fill: white;
 }
 

@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_30_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LibraryManagementSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LibraryManagementSystem.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.db" beforeDir="false" afterPath="$PROJECT_DIR$/data.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rs2xml.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/Branch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Branch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/ClassesTestDrive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/ClassesTestDrive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/functionnalities/TableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/functionnalities/TableModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/users/admin/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/users/admin/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/users/student/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/users/student/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/DatabaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/DatabaseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uiControllers/AddNewBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uiControllers/AddNewBookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uiControllers/AdminHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uiControllers/AdminHomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uiControllers/DemandAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uiControllers/DemandAccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uiControllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uiControllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uiControllers/ManageBooksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uiControllers/ManageBooksController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uiDesigns/AddNewBookUi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/uiDesigns/AddNewBookUi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uiDesigns/AdminHomeUi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/uiDesigns/AdminHomeUi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uiDesigns/ChangePasswordUi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/uiDesigns/ChangePasswordUi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uiDesigns/CheckBookDemandsUi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/uiDesigns/CheckBookDemandsUi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uiDesigns/DemandAccountUi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/uiDesigns/DemandAccountUi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uiDesigns/LoginUi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/uiDesigns/LoginUi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uiDesigns/ManageBooksUi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/uiDesigns/ManageBooksUi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uiDesigns/RemoveBookUi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/uiDesigns/RemoveBookUi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uiDesigns/StudentHomeUi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/uiDesigns/StudentHomeUi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uiStyles/AddNewBookStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/uiStyles/AddNewBookStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uiStyles/AdminHomeStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/uiStyles/AdminHomeStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uiStyles/DemandAccountStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/uiStyles/DemandAccountStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uiStyles/LoginStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/uiStyles/LoginStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uiStyles/ManageBooksStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/uiStyles/ManageBooksStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uiStyles/RemoveBookStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/uiStyles/RemoveBookStyle.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,8 +119,12 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectId" id="1ejwHFAjz9USKDN3XJSJo7S1OtM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -98,15 +140,18 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/rs2xml.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/sqlite-jdbc-3.30.1.jar" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -153,6 +198,7 @@
     <configuration name="LibMgmntSys_MAIN" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="application.Main" />
       <module name="LibraryManagementSystem" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\javafx-sdk-17\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="application.*" />
@@ -244,11 +290,25 @@
       <workItem from="1595807870452" duration="2874000" />
       <workItem from="1595844249023" duration="2282000" />
       <workItem from="1622926924475" duration="1202000" />
+      <workItem from="1622971969956" duration="1892000" />
+      <workItem from="1622995722359" duration="689000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
